@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Leaflet layers control</title>
+<link
+	href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+	rel="stylesheet" type="text/css"></link>
+<link href="css/dc.css" rel="stylesheet" type="text/css"></link>
+<link rel="stylesheet" type="text/css"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></link>
+<link rel="stylesheet" href="css/bootstrap.vertical-tabs.css"></link>
+<script src="js/asterix-sdk-stable.js"></script>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script
+	src="http://cdn.bootcss.com/crossfilter/1.3.12/crossfilter.min.js"></script>
+<script src="js/dc.min.js"></script>
+<script src="js/jquery-ui.min.js" charset="utf-8"></script>
+<link rel="stylesheet" href="css/jAlert-v3.css"></link>
+<script src="js/jAlert-v3.min.js"></script>
+<script src="js/jAlert-functions.min.js"></script>
+<script src="js/cloudberry.js"></script>
+</head>
+<body>
+	<div align="center">
+		<hr></hr>
+		<div class="text-center" id='input'>
+			<form class="form-inline" id="input-form">
+				<div class="form-group" id="input-group">
+					<label class="sr-only">Key words</label> <input type="text"
+						class="form-control" id="keyword-textbox" placeholder="KEYWORD"></input>
+				</div>
+				<button type="button" class="btn btn-primary" id="submit-button">SEARCH</button>
+			</form>
+		</div>
+		<div>
+			<!-- Nav tabs -->
+			<div>
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#NEWS"
+						aria-controls="NEWS" role="tab" data-toggle="tab">NEWS</a></li>
+					<li role="presentation"><a href="#TIMESERIAL"
+						aria-controls="TIMESERIAL" role="tab" data-toggle="tab">TIMESERIAL</a></li>
+					<li role="presentation"><a href="#WORDCLOUD"
+						aria-controls="WORDCLOUD" role="tab" data-toggle="tab">WORDCLOUD</a></li>
+				</ul>
+			</div>
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="NEWS">
+					<br/> <span>YOU CAN ENTER KEYWORD AND START SEARCH NOW.
+						:-) </span>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="TIMESERIAL">
+					<div id="time-series"></div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="WORDCLOUD">...</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
